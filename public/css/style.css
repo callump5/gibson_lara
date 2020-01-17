@@ -15,6 +15,10 @@ html {
 body {
     box-sizing: border-box;
     min-height: 100vh;
+    background-image: url('../guitar-back.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 img {
     max-width: 100%;
@@ -34,9 +38,12 @@ img {
 }
 
 .u-paragraph {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
+.u-sm-mar-bot {
+    margin-bottom: 1rem;
+}
 
 
 /*Font:
@@ -46,6 +53,10 @@ img {
 h1, h2, h3 {
     font-family: 'Alata', sans-serif;
     color: #282822;
+}
+
+h1 {
+    font-size: 3.5rem;
 }
 
 h2{
@@ -93,6 +104,39 @@ p, a {
 .navbar__nav--link:not(:last-child){
     padding-right: 3rem;
 }
+
+
+/* Home */
+
+.landing {
+    height:  calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing__text {
+    width: 50%;
+    color: white;
+}
+
+.landing__text h1, .landing__text p, .landing__text a {
+    color: white;
+}
+
+.landing__text a {
+    display: inline-block;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 20rem;
+    background-color: black;
+    color: white;
+
+}
+
+
 
 
 /* Guitar */

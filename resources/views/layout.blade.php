@@ -22,17 +22,15 @@
                 <nav class="navbar__nav">
                     <a class="navbar__nav--link" href="/">Home</a>
                     <a class="navbar__nav--link" href="/guitars">Guitars</a>
-                    <a class="navbar__nav--link" href="">Add Guitar</a>
-                    <a class="navbar__nav--link" href="">Contact</a>
+                    <a class="navbar__nav--link" href="/guitars/add">Add Guitar</a>
+                    <a class="navbar__nav--link" href="/contact">Contact</a>
                 </nav>
             </div> 
         </header>
         
-        <div class="u-container">
-            <div class="u-page-container">
-                @yield('content')
-            </div>
-        </div>
+        @yield('content')
         
+        </div>
+
     </body>
 </html>
