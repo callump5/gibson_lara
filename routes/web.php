@@ -17,4 +17,8 @@ Route::get('/', 'HomeController@show');
 
 // Guitar Controller
 Route::get('/guitars', 'GuitarsController@index');
+Route::post('/guitars', 'GuitarsController@store');
+Route::get('guitars/create', 'GuitarsController@create');
 Route::get('/guitars/{guitar}', 'GuitarsController@show');
+Route::get('/guitars/{guitar}/edit', 'GuitarsController@edit');
+Route::put('/guitars/{guitar}', 'GuitarsController@update');

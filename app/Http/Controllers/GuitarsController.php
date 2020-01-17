@@ -22,4 +22,46 @@ class GuitarsController extends Controller
             'guitar' => $guitar
         ]);
     }
+
+    public function create() {
+        return view('guitars.create');
+    }
+
+    public function store() {
+        $guitar = new Guitars;
+
+        $guitar->name = request('name');
+        $guitar->type = request('type');
+        $guitar->excerpt = request('excerpt');
+        $guitar->body = request('body');
+
+        $guitar->save();
+
+        return redirect('/guitars');
+    }
+
+    public function edit($id) {
+
+        $guitar = Guitars::find($id);
+
+
+        return view('guitars.edit', [
+            'guitar' => $guitar
+        ]);
+    }
+
+    public function update($id) {
+
+        $guitar = new Guitars;
+
+        $guitar->name = request('name');
+        $guitar->type = request('type');
+        $guitar->excerpt = request('excerpt');
+        $guitar->body = request('body');
+
+        $guitar->save();
+
+        return redirect('/guitars/' . $guitar->id);
+    }
+    
 }

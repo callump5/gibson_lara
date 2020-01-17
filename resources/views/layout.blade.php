@@ -22,7 +22,7 @@
                 <nav class="navbar__nav">
                     <a class="navbar__nav--link" href="/">Home</a>
                     <a class="navbar__nav--link" href="/guitars">Guitars</a>
-                    <a class="navbar__nav--link" href="/guitars/add">Add Guitar</a>
+                    <a class="navbar__nav--link" href="/guitars/create">Add Guitar</a>
                     <a class="navbar__nav--link" href="/contact">Contact</a>
                 </nav>
             </div> 

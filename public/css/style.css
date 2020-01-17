@@ -35,6 +35,10 @@ img {
 
 .u-page-container {
     padding: 6rem 0;
+    background-color: white;
+    padding: 3rem 6rem;
+    box-shadow: #28282283  0px 0px  5px 1px;
+
 }
 
 .u-paragraph {
