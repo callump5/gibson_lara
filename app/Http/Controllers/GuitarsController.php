@@ -52,7 +52,7 @@ class GuitarsController extends Controller
 
     public function update($id) {
 
-        $guitar = new Guitars;
+        $guitar =  Guitars::find($id); 
 
         $guitar->name = request('name');
         $guitar->type = request('type');
